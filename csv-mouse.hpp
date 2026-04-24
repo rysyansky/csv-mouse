@@ -20,7 +20,7 @@ private:
 
 csv_mouse::csv_mouse(int columns, char separator) {
     table = std::vector<std::vector<std::string>>(columns);
-    sep = static_cast<char>(separator);
+    sep = separator;
 }
 
 csv_mouse::csv_mouse(const std::vector<std::string> &row, char separator) :
